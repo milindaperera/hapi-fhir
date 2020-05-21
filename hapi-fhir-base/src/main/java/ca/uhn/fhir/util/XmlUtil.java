@@ -1603,7 +1603,7 @@ public class XmlUtil {
 			Class.forName("com.ctc.wstx.stax.WstxOutputFactory");
 			if (outputFactory instanceof WstxOutputFactory) {
 //				((WstxOutputFactory)outputFactory).getConfig().setAttrValueEscaperFactory(new MyEscaper());
-				outputFactory.setProperty(XMLOutputFactory2.P_TEXT_ESCAPER, new MyEscaper());
+				//outputFactory.setProperty(XMLOutputFactory2.P_TEXT_ESCAPER, new MyEscaper());
 			}
 		} catch (ClassNotFoundException e) {
 			ourLog.debug("WstxOutputFactory (Woodstox) not found on classpath");
